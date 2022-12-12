@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <style>
+        .custom-color{
+            background-color: rgb(209, 211, 212);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col-md-4 offset-md-2">
+                <div class="card shadow-md p-3 custom-color">
+                    <form action="#">
+                        <div class="form-group">
+                            <label for="name">Username</label>
+                            <input type="text" name="username" id="name" class="form-control">
+                            <div class="error-text">
+                                <small class="name-error"></small>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email" class="form-control">
+                            <div class="error-text">
+                                <small class="email-error"></small>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="pass">Password</label>
+                            <input type="password" name="password" id="pass" class="form-control">
+                            <div class="error-text">
+                                <small class="pass-error"></small>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="confirm-pass">Confirm Password</label>
+                            <input type="password" name="confirm-pass" id="confirm-pass" class="form-control">
+                            <div class="error-text">
+                                <small class="confirm-error"></small>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <button type="button" class="btn btn-block btn-success" id="submit">Save</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+<script src="./assets/js/main.js"></script>
+</body>
+
+</html>
